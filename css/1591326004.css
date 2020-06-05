@@ -1,8 +1,87 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,700i');
 
-body:not(.admin) * {
-  font-family: 'Nunito Sans', sans-serif !important;
-}
+/* Set default font. */
+body { font-family: 'Nunito Sans', sans-serif; font-weight: 400; }
+
+/* Remove font-family overrides in ShulCloud CSS. */
+input[type="button"],
+input[type="submit"],
+input.action-button,
+#header,
+#header h3,
+#nav_section li a,
+#maincontent h2,
+#maincontent h3,
+#maincontent h3.date,
+#maincontent p,
+#maincontent li,
+#maincontent span.marker a,
+#maincontent p a.view_link,
+.home .featured_article.featured_article.news a,
+.home .featured_article.featured_article4 .section_subcontent h3,
+#maincontent .event_widget_title,
+#maincontent .fck_widget_events .event_widget_moreinfo a,
+#eventslider .event_info > p a,
+.table-responsive > table > tbody > tr > td:last-child,
+.fck_widget_zmanim .table-responsive > table > tbody > tr:last-child td a,
+.contact_form label,
+.contact_form input,
+.contact_form textarea,
+.contact_form input.submit,
+.contact_form button.g-recaptcha,
+.fck_widget_calendar .table-responsive td,
+#maincontent .fck_widget_calendar .readmore a,
+.featured_article .fck_widget_subscribe input.go_button,
+#maincontent .subscribe_featured_article .fck_widget_subscribe a,
+.week_calendar_header,
+.week_calendar_header .week_calendar_sedra_holiday,
+table.calendar,
+table.calendar th,
+#maincontent .registration input.register_submit,
+.sy-caption-wrap .sy-caption a .slider_title, .sy-caption-wrap .sy-caption .slider_title,
+.sy-caption-wrap .sy-caption .slider_description,
+.fck_widget_blog_slider .sy-caption-wrap .sy-caption a.slider_link,
+#footer,
+#footer .footer_inner .footer_menu ul li a,
+table.calendar.calendar_main th,
+.ui-widget,
+.right_box1 p,
+.schedule p,
+.upcoming h4,
+#sidebar_right .readmore,
+.mailing_list p,
+.mailing_msg p,
+.zamanim p,
+#maincontent .readmore,
+#mainnav .categoryitems,
+.sc_container,
+.sc_container .featured_article h2,
+#maincontent .sc_container,
+#maincontent .sc_container p,
+#maincontent .sc_container li,
+.sc_container h1,
+#maincontent.full_width .sc_container h2,
+#maincontent .sc_container h2,
+#maincontent.default.full_width .sc_container h2,
+.cpDayColumnHeader,
+.cpYearNavigation,
+.cpMonthNavigation,
+.cpCurrentMonthDate,
+.cpCurrentMonthDateDisabled,
+.cpOtherMonthDate,
+.cpOtherMonthDateDisabled,
+.cpCurrentDate,
+.cpCurrentDateDisabled,
+.cpTodayText,
+.cpTodayTextDisabled,
+.cpText,
+#upload_bar,
+.header_button,
+.admin_tabs > li.header_button,
+body .header_menu,
+div.cchtml,
+#sidebar_right .event_calendar_tags_tabs li label
+{ font-family: inherit; }
 
 .google_login{
     display:none;
@@ -35,7 +114,6 @@ a {
     padding: 5px;
     text-transform:uppercase;
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
     background:#56519a;
     color:#fff;
     border-radius:10px;
@@ -92,8 +170,7 @@ input.action-button, .contact_form input.submit, .contact_form button.g-recaptch
 
 #maincontent h2 {
     color: #e99142;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 34px;
     height: auto;
     padding: 0;
@@ -102,8 +179,7 @@ input.action-button, .contact_form input.submit, .contact_form button.g-recaptch
 /*h3 styling*/
 #maincontent h3 {
     color: #3f3f8d;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 24px;
     text-transform: uppercase;
     height: auto;
@@ -116,7 +192,6 @@ input.action-button, .contact_form input.submit, .contact_form button.g-recaptch
 background: #56519a;
 color: #fff;
 height: 34px;
-font-family: Arial, Helvetica, sans-serif;
 font-size: 12px;
 }
 @media (max-width: 767px){
@@ -218,7 +293,7 @@ border: 1px solid #eee;
     padding-left: 33px;
     font-style: normal;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 #maincontent .fck_widget_events .event_widget_moreinfo a {
@@ -265,7 +340,7 @@ vertical-align: top;
 }
 .ce_table .ce_desc .ce_holiday, .ce_table .ce_desc .ce_sedra, .ce_table .ce_desc .ce_lifecycle_type, .ce_table .ce_desc .ce_event_name {
     font-size: 15px;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 }
@@ -283,7 +358,7 @@ max-width: 100%;
 .event_time, .event_location {
     display: block;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 700;
 }
 .event_time{
     border-bottom: 2px solid #e99142;
@@ -296,7 +371,7 @@ margin-top: 10px;
 }
 
 .daywrap li a, .daywrap div.sedra a{
-    font-weight: bold;
+    font-weight: 700;
     color: #402d88;
 }
 #maincontent.cal table.calendar td .jewishDay{
@@ -308,7 +383,7 @@ margin-top: 10px;
 }
 table.calendar_header_date th.month_header {
     color: black;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .sy-slides-wrap {
