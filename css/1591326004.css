@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,700i');
+
+body:not(.admin) * {
+  font-family: 'Nunito Sans', sans-serif !important;
+}
+
+.google_login{
+    display:none;
+}
+
+a {
+    color: #6c57bb;
+}
+
+#sidebar_left {
+    border-top: 2px solid #ecb859;
+    border-bottom: 2px solid #ecb859;
+}
+
+#nav_section li a {
+    font-size: 15px;
+}
+
+#nav_section li ul li a {
+    padding: 7px 10px;
+    text-transform: none;
+    background-color: #f6e9df;
+}
+
+/* donate button and social icons */
+.top_links li:first-child a {
+    text-indent: 0px;
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 5px;
+    text-transform:uppercase;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    background:#56519a;
+    color:#fff;
+    border-radius:10px;
+}
+
+.top_links li:first-child a:before {
+    display:none;
+}
+.top_links li a:before {
+    color:#56519a;
+}
+.top_links li:nth-child(2) a:before{ content:"\f09a";}
+.top_links li:nth-child(3) a:before{ content:"\f099";}
+.top_links li:nth-child(4) a:before{ content:"\f16d";}
+
+
+.subnav_has_children > a > span:first-child:before {
+content: "+";
+float: right;
+font-size: 18px;
+font-weight: 700;
+line-height: 18px;
+}
+
+/*reducing padding underneath homepage block of text*/
+.home .featured_article {
+    padding: 10px 0px;
+}
+
+/*orange button background on calendar widget link buttons*/
+#maincontent .fck_widget_events .event_widget_moreinfo a {
+    background: #e99142;
+}
+
+/*homepage slide purple button background*/
+.sy-caption-wrap .sy-caption a.slider_link, #maincontent span.marker a, #maincontent p a.view_link, .featured_article .fck_widget_subscribe input.go_button, .fck_widget_zmanim .table-responsive > table > tbody > tr:last-child td a, .table-responsive table.calendar th:first-child, .table-responsive table.calendar th:last-child, table.calendar.calendar_main th:first-child, table.calendar.calendar_main th:last-child, #maincontent .fck_widget_calendar .readmore a {
+    background: #56519a;
+}
+input[type="button"], input[type="submit"], 
+input.action-button, .contact_form input.submit, .contact_form button.g-recaptcha, #maincontent .registration input.register_submit, #eventslider .event_info > p a {
+    background:#56519a !important;
+}
+
+/*homepage slide lower color band*/
+.header_slider .sy-caption-wrap, .fck_widget_slider .sy-caption-wrap {
+    border-color: #ecb859;
+}
+
+/*h2 styling*/
+#maincontent h2.content_title {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+#maincontent h2 {
+    color: #e99142;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 34px;
+    height: auto;
+    padding: 0;
+}
+
+/*h3 styling*/
+#maincontent h3 {
+    color: #3f3f8d;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: uppercase;
+    height: auto;
+    padding: 0;
+    padding-bottom: 0px;
+}
+
+/*top-most navigation band on desktop and mobile view */
+#header {
+background: #56519a;
+color: #fff;
+height: 34px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+}
+@media (max-width: 767px){
+#header {
+background: #56519a;
+height: 53px;
+}
+
+#topnav {
+background: url(https://images.shulcloud.com/7876/uploads/Design-Assets/FancyMobileHamburgerMenu.png) no-repeat center center;
+width: 55px;
+height: 100%;
+position: absolute;
+z-index: 300;
+left: 0px;
+top: 0px;
+cursor: pointer;
+}
+
+#header #header_inner #header_buttons > div#header_login_button {
+    text-align: left;
+    display: block;
+    background: url(https://images.shulcloud.com/7876/uploads/Design-Assets/FancyMemberLoginButton.png) center center no-repeat;
+    text-indent: -999em;
+    width: 55px;
+    height: 100%;
+    border: 0;
+}
+.header_slider .sy-box, .fck_widget_slider .sy-box {
+height: 200px;
+}
+}
+
+/* current day background*/
+#maincontent.cal table.calendar td.today, #maincontent.cal table.calendar td:hover {
+    background: #56519a;
+}
+
+/*weekend cal background color*/
+#maincontent span.marker a, #maincontent p a.view_link, .featured_article .fck_widget_subscribe input.go_button, .fck_widget_zmanim .table-responsive > table > tbody > tr:last-child td a, .table-responsive table.calendar th:first-child, .table-responsive table.calendar th:last-child, table.calendar.calendar_main th:first-child, table.calendar.calendar_main th:last-child, #maincontent .fck_widget_calendar .readmore a {
+    background: #e99142;
+}
+table.calendar.calendar_main th {
+    background: #ecb859;
+}
+
+.grecaptcha-badge{
+    bottom: -31px !important;
+}
+
+/*fixes the messed-up last mobile menu item indent and margin issue*/
+@media (max-width: 570px){
+#nav_section > li:last-child {
+margin: 0px;
+}
+}
+/*makes the purple donate button the right height and padding*/
+.top_links li:first-child a {
+    text-indent: 0px;
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 3px 9px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #56519a;
+    color: #fff;
+    height: 23px;
+}
+
+/*Calendar Widget Display Improvements*/
+ul.upcomingEvents li:nth-child(odd) {
+background-color: #f4f4f4;
+}
+
+ul.upcomingEvents li:nth-child(even) {
+border: 1px solid #eee;
+}
+
+#maincontent .event_widget_title:before { 
+    content: "› ";
+    font-family: georgia;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#maincontent .event_widget_title {
+    font-size: 20px;
+    margin-bottom: 8px;
+    padding-left: 12px;
+    padding-right: 6px;
+}
+
+#maincontent .fck_widget_events .event_widget_time:before {
+    content: "⌚  ";
+}
+
+#maincontent .fck_widget_events .event_widget_time {
+    color: #555;
+    padding-left: 33px;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#maincontent .fck_widget_events .event_widget_moreinfo a {
+    display: none;
+}
+
+#maincontent .fck_widget_events {
+    padding: 0px 0 0 0px;
+}
+
+#maincontent .section_subcontent h3 {
+margin: 0px;
+padding: 10px;
+background-color: #3f3f8d;
+color: #FFF;
+}
+
+#maincontent .event_widget_calendar_swatch {
+    display: none !important;
+}
+/*calendar mobile view - changing color of day header band*/
+@media (max-width: 570px){
+#content #maincontent.cal .calendar_day_view h2 {
+    background: #56519a !important;
+}
+td.ce_desc {
+vertical-align: top;
+}
+}
+/*condensing the mobile calendar view spacing*/
+.ce_table td.ce_time_start, .ce_table td.ce_time_end {
+    width: 80px;
+}
+.ce_table td {
+    padding: 4px;
+    border-bottom: #ccc solid;
+}
+/*tablet view fixing day header styles*/
+@media (max-width: 767px){
+#maincontent.cal h2 {
+    font-size: 16px;
+    line-height: 30px;
+    background-color: #eee;
+}
+.ce_table .ce_desc .ce_holiday, .ce_table .ce_desc .ce_sedra, .ce_table .ce_desc .ce_lifecycle_type, .ce_table .ce_desc .ce_event_name {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+}
+
+.event_details.content_body{
+margin-left: 0px;
+margin-right: 0px;
+padding-left: 0px;
+padding-right: 0px;
+max-width: 100%;
+}
+.featured_article {
+    padding: 15px 0px;
+}
+.event_time, .event_location {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+}
+.event_time{
+    border-bottom: 2px solid #e99142;
+}
+.individual_event_page_header {
+margin-top: 10px;
+}
+#maincontent.cal{
+   padding: 15px 0px;
+}
+
+.daywrap li a, .daywrap div.sedra a{
+    font-weight: bold;
+    color: #402d88;
+}
+#maincontent.cal table.calendar td .jewishDay{
+    display:none;
+}
+
+#maincontent.cal table.calendar td{
+    background:#f5f5f5;
+}
+table.calendar_header_date th.month_header {
+    color: black;
+    font-weight: bold;
+}
+
+.sy-slides-wrap {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    max-height: 400px;
+}
