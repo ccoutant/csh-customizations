@@ -395,3 +395,6 @@ table.calendar_header_date th.month_header {
     width: 100%;
     max-height: 400px;
 }
+#maincontent ul li {
+    padding-top: 5px;
+}
