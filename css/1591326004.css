@@ -398,3 +398,10 @@ table.calendar_header_date th.month_header {
 #maincontent ul li {
     padding-top: 5px;
 }
+
+/* Override bootstrap styles, which get loaded later than ours. */
+.pfbc-form .form-actions {
+    padding: 0 !important;
+    border: none !important;
+    background: none !important;
+}
