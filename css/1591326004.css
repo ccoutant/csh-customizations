@@ -81,7 +81,7 @@ table.calendar.calendar_main th,
 body .header_menu,
 div.cchtml,
 #sidebar_right .event_calendar_tags_tabs li label
-{ font-family: inherit; }
+{ font-family: inherit !important; }
 
 .google_login{
     display:none;
