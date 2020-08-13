@@ -405,3 +405,9 @@ table.calendar_header_date th.month_header {
     border: none !important;
     background: none !important;
 }
+
+/* Styles for Memorial Book Donation Form */
+#form_64636 fieldset {
+    width: 420px;
+    margin: 0 auto;
+}
